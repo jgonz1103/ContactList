@@ -2,9 +2,8 @@ import React from "react";
 
 const ContactRow =  (props) =>{
     let contact = props.contact;
-    
       return (
-      <tr key={contact.id}>
+      <tr>
         <td>{contact.name}</td>
         <td>{contact.phone}</td>
         <td>{contact.email}</td>

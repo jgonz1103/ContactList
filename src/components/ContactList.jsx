@@ -3,7 +3,6 @@ import ContactRow from "./ContactRow";
 
 
 const ContactList = (props) =>{
-  console.log('hi')
     return(
         <table>
   <tbody>
@@ -13,8 +12,8 @@ const ContactList = (props) =>{
       <th>Email</th>
     </tr>
     {props.contacts.map((contact) =>{
-       return <ContactRow contact={contact.id}/>;
-    })};
+       return <ContactRow contact={contact} key={contact.id}/>
+    })}
     </tbody>
   </table>
     )
